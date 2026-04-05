@@ -12,6 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
+    steps:
       - name: Delete old Releases and Workflows
         uses: ophub/delete-releases-workflows@main
         with:
