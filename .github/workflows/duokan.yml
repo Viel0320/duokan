@@ -18,10 +18,10 @@ jobs:
         with:
           gh_token: ${{secrets.GITHUB_TOKEN}}
           delete_releases: true
-          releases_keep_latest: 360
+          releases_keep_latest: 3
           delete_tags: true
           delete_workflows: true
-          workflows_keep_day: 360
+          workflows_keep_day: 3
 
       - name: Checkout
         uses: actions/checkout@v3
